@@ -1,4 +1,12 @@
-const fibonacci = function() {
+const fibonacci = function(n) {
+    if (n < 0){
+        return 'OOPS';
+    }
+    let number = parseInt(n,10);
+    if(number < 2){
+        return number;
+    }
+    return fibonacci(number-1) + fibonacci(number-2);
 
 };
 
